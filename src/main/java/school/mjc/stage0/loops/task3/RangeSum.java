@@ -4,11 +4,6 @@ public class RangeSum {
     public void printSumInclusive(int firstBorder, int secondBorder) {
         int sum = 0;
 
-        int start = Math.min(firstBorder, secondBorder);
-        int end = Math.max(firstBorder, secondBorder);
-
-
-
         if (firstBorder == 0 && secondBorder == 0) {
             // Both boundaries are 0, so the sum is also 0
             sum = 0;
@@ -20,10 +15,6 @@ public class RangeSum {
             for (int i = secondBorder; i <= firstBorder; i++) {
                 sum += i;
             }
-        }
-
-        for (int i = start; i <= end; i++) {
-            sum += i;
         }
 
         System.out.println(sum);
