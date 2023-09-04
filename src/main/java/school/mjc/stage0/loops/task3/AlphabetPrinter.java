@@ -2,11 +2,11 @@ package school.mjc.stage0.loops.task3;
 
 public class AlphabetPrinter {
     public void printAlphabet() {
-        char startChar = 'A';
-        char endChar = 'Z';
+        char startLetter = 'a';
+        char endLetter = 'z';
 
-        for (char counter = startChar; counter <= endChar; counter++) {
-            System.out.print(counter + " ");
+        for (char letter = startLetter; letter <= endLetter; letter++) {
+            System.out.println(letter);
         }
     }
 
@@ -15,4 +15,5 @@ public class AlphabetPrinter {
         alphabetPrinter.printAlphabet();
     }
 }
+
 

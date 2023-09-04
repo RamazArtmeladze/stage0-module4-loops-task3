@@ -1,20 +1,27 @@
 package school.mjc.stage0.loops.task3;
 
 public class RangeSum {
-    public void printSumInclusive(int firstBoarder, int secondBoarder) {
+    public void printSumInclusive(int firstBorder, int secondBorder) {
         int sum = 0;
-        if (firstBoarder >= secondBoarder) {
-            System.out.println("firsBoarder should be less then secondBoarder");
-        } else {
-            for (int counter = firstBoarder; counter < secondBoarder; counter++) {
-                sum += counter;
+
+        if (firstBorder <= secondBorder) {
+            for (int i = firstBorder; i <= secondBorder; i++) {
+                sum += i;
             }
-            System.out.println(sum - firstBoarder);
+        } else {
+            for (int i = secondBorder; i <= firstBorder; i++) {
+                sum += i;
+            }
         }
 
+        System.out.println(sum);
     }
-    public static void main (String[]args){
+
+    public static void main(String[] args) {
         RangeSum rangeSum = new RangeSum();
-        rangeSum.printSumInclusive(7, 5);
+        int firstBorder = 5;
+        int secondBorder = 10;
+        rangeSum.printSumInclusive(firstBorder, secondBorder);
     }
 }
+
