@@ -23,7 +23,7 @@ public class DigitsSum {
 
     public static void main(String[] args) {
         DigitsSum digitsSumCalculator = new DigitsSum();
-        int num = 12345;
+        int num = 123457;
         digitsSumCalculator.printDigitsSum(num);
     }
 }
