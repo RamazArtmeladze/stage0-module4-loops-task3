@@ -5,7 +5,6 @@ public class RangeSum {
         int sum = 0;
 
         if (firstBorder == 0 && secondBorder == 0) {
-            // Both boundaries are 0, so the sum is also 0
             sum = 0;
         } else if (firstBorder <= secondBorder) {
             for (int i = firstBorder; i <= secondBorder; i++) {
@@ -22,8 +21,8 @@ public class RangeSum {
 
     public static void main(String[] args) {
         RangeSum rangeSum = new RangeSum();
-        int firstBorder = 5;
-        int secondBorder = 10;
+        int firstBorder = 50;
+        int secondBorder = 50;
         rangeSum.printSumInclusive(firstBorder, secondBorder);
     }
 }
